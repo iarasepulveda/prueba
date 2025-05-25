@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing práctica</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Contrail+One&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+  <header class="header">
+    <img src="imagenes/Iconos/dinoslogos.png" alt="logo de dinos entrevistadores a" class="logo-img">
+  </header>
+
+  <main>
+    <!-- INTRO -->
+
+    
+    <section class="intro">
+      <div class="izquierda">
+      <h1><strong>ENTREVISTAS <br>CON </strong><span class="don-cirio">DON CIRIO</span></h1>
+      <div class="subtitulo-lineas">
+        <span class="subtitulo">Elegí al próximo invitado.</span>
+      </div>
+      <p class="subtexto">
+        Bardealo o bancalo,<br class="salto-mobile"> pero hacete escuchar.
+      </p>
+
+         <img src="imagenes/Iconos/ctaD.png" alt="Botón Votar Ya" class="boton-votar">
+      </div>
+      <!--POP UP DEL FORMM-->
+      <!-- Contenedor general del popup -->
+<div class="popup oculto" id="popup">
+  <!-- Fondo oscuro degradado -->
+  <div class="popup-overlay"></div>
+
+  <!-- Contenido del popup -->
+  <div class="popup-content">
+
+    <!-- Botón de cerrar -->
+    <button id="cerrar-popup" class="cerrar-popup">X</button>
+
+    <div id="formulario-container">
+    <h2 id="titulo-formulario">REGISTRATE PARA VOTAR</h2>
+    <!-- Formulario con ID -->
+    <form id="formulario" class="form-body">
+      <label for="nombre">Nombre</label>
+      <input type="text" id="nombre" required>
+
+      <label for="edad">Edad</label>
+      <input type="number" id="edad" required>
+
+      <label for="correo">Correo Electrónico</label>
+      <input type="email" id="correo" required>
+
+      <button type="submit" id="boton">Enviar</button>
+    </form>
+  </div>
+
+    <!-- Feedback después de enviar -->
+    <div id="feedback" class="oculto">
+      <h2>¡YA TE REGISTRASTE!</h2>
+      <p>Hecho está 🔮 Ahora mi alma ya está conectada a la tuya, <span id="nombre-placeholder"></span><strong>🐢X SIEMPRE</strong>
+        <br><br>
+        Revisa el mail que te mandamos a <span id="correo-placeholder"></span> y vota al próximo invitado.</p>
+    </div>
+  </div>
+</div>
+
+      
+      <div class="derecha-con-curvas">
+      <div class="curva arriba"></div>
+    <div class="contenedor-galeria">
+      <div id="galeriaInner" class="galeria-inner">
+        <img src="imagenes/Portadas/portaSofiyKuki.jpg" alt="sofi y kuki">
+        <img src="imagenes/Portadas/portaCharlotte.jpg" alt="charlotte">
+        <img src="imagenes/Portadas/portaMorteyMarti.jpg" alt="morte y marti">
+        <img src="imagenes/Portadas/portaAngieyMica.jpg" alt="angie y mica miniatura">
+        <img src="imagenes/Portadas/portaAxel.jpg" alt="axel cantante">
+        <img src="imagenes/Portadas/portaSashayFlor.jpg" alt="sasha y flor">
+        <img src="imagenes/Portadas/portaMomo.jpg" alt="momo miniatura">
+      </div>
+      </div>
+      <div class="curva abajo"></div>
+    </section>
+  </main>
+
+
+   <!-- BULLETS -->
+  <section class="separacion-grande">
+
+  <!-- tiulo con líneas a los costados -->
+  <div class="bullet-titulo-wrapper">
+    <h2 class="bullet-titulo">¡PREPARATE PARA VOTAR, REIR Y <span class="ultima-palabra">CHUSMEAR!</span></h2>
+  </div>
+
+  <!-- contenedor de bullets -->
+  <div class="bullets-container">
+
+    <div class="bullet">
+      <img src="imagenes/Iconos/bullet1.png" alt="icono de participa" class="bullet-icon">
+      <h3>PARTICIPÁ</h3>
+      <div class="divider"></div>
+      <p>En esta página podrás registrarte para participar votando al próximo invitado que más te interese.</p>
+    </div>
+
+    <div class="bullet">
+      <img src="imagenes/Iconos/bullet2.png" alt="icono de conocelos" class="bullet-icon">
+      <h3>CONOCELOS</h3>
+      <div class="divider"></div>
+      <p>Vas a poder ver quiénes son los próximos invitados antes de votarlos.</p>
+    </div>
+
+    <div class="bullet">
+      <img src="imagenes/Iconos/bullet3.png" alt="icono de descubrí" class="bullet-icon">
+      <h3>DESCUBRÍ</h3>
+      <div class="divider"></div>
+      <p>Encontrarás quienes son los más amados y odiados por la comunidad.</p>
+    </div>
+
+    <div class="bullet">
+      <img src="imagenes/Iconos/bullet4.png" alt="icono de reviví" class="bullet-icon">
+      <h3>REVIVÍ</h3>
+      <div class="divider"></div>
+      <p>Están los mejores momentos tanto de Martín, como de sus invitados.</p>
+    </div>
+
+  </div> <!-- cierre del contenedor de bullets -->
+
+</section>
+
+<!--QUIENES SONNNNNNNNNNNNNNNNNNNN-->
+<section class="titulo-subtitulo separacion-grande">
+  <h2 class="titulo-con-lineas">¿QUIÉNES SON?</h2>
+  <p>Conocé a quienes vas a poder votar. Uno llega antes. ¿Quién? Lo elegís vos.</p>
+
+  <div class="cards-wrapper">
+    <button class="arrow left-arrow">&#10094;</button>
+
+    <div class="cards-horizontal">
+      <div class="card-q active">
+        <img src="imagenes/Cards/spreenddesktop.png" alt="spreen" />
+      </div>
+      <div class="card-q">
+        <img src="imagenes/Cards/camijaraD.png" alt="cami jara"/>
+      </div>
+      <div class="card-q">
+        <img src="imagenes/Cards/domifdesktop.png" alt="domi faena"/>
+      </div>
+    </div>
+
+    <button class="arrow right-arrow">&#10095;</button>
+  </div>
+</section>
+
+
+  <!-- CARRUSEL AMADOS Y ODIADOS -->
+   <section class="titulo-subtitulo separacion-grande">
+  <h2 class="titulo-con-lineas">SEGÚN LAS TORTUGAS SON...</h2>
+  <p>Invitados que conquistaron corazones… o fueron mandados a Chaca. Así los recuerda la comunidad.</p>
+
+  <div class="carrousel">
+    <div class="carrousel-inner">
+      <div class="card">
+        <img src="imagenes/scrolld/martid.png" alt="martina">
+      </div>
+      <div class="card">
+        <img src="imagenes/scrolld/marixad.png" alt="martina">
+      </div>
+      <div class="card">
+        <img src="imagenes/scrolld/tomasd.png" alt="martina">
+      </div>
+      <div class="card">
+        <img src="imagenes/scrolld/juliand.png" alt="martina">
+      </div>
+      <div class="card">
+        <img src="imagenes/scrolld/matiasd.png" alt="martina">
+      </div>
+      <div class="card">
+        <img src="imagenes/scrolld/jimenad.png" alt="martina">
+      </div>
+      <div class="card">
+        <img src="imagenes/scrolld/charloted.png" alt="martina">
+      </div>
+      <div class="card">
+        <img src="imagenes/scrolld/manud.png" alt="martina">
+      </div>
+      <div class="card">
+        <img src="imagenes/scrolld/yaninad.png" alt="martina">
+      </div>
+      <div class="card">
+        <img src="imagenes/scrolld/emmad.png" alt="martina">
+      </div>
+    </div> <!-- cierre de .carrousel-inner -->
+  </div> <!-- cierre de .carrousel -->
+</section>
+
+
+  <!-- TOP MOMENTOS -->
+  <section class="titulo-subtitulo separacion-grande">
+    <h2 class="titulo-con-lineas">TOP MOMENTOS</h2>
+    <p>Cada comentario dice mucho, pero la entrevista entera dice TODO. 
+    <br>¿Todavía no te sumaste?</p>
+    <!-- comentarios -->
+     <div class="comentarios">
+     <img class="comentario" src="imagenes/olvidados/comentario1.png" alt="comentario">
+     <img class="comentario" src="imagenes/olvidados/comentario2.png" alt="comentario2">
+     <img class="comentario" src="imagenes/olvidados/comentario3.png" alt="comentario3">
+     </div>
+   </section>
+
+
+  <!-- FOOTER -->
+  <footer class="separacion-grande">
+    <p class="frase" >“Todo es ficción. No creas nada de lo que ves ni lo tomes personal. Es un personaje. 
+      <br><strong>NADA ES VERDAD</strong>. O si, o no.”
+    </p>
+    <div class="redes-links">
+  <a href="https://www.instagram.com/martincirio/" target="_blank">
+    <img src="imagenes/scrolld/dino_1.png" alt="dino 1">
+  </a>
+  <a href="https://www.youtube.com/c/MartinCirio" target="_blank">
+    <img src="imagenes/scrolld/dino_2.png" alt="dino 2">
+  </a>
+  <a href="https://www.twitch.tv/martinciriook" target="_blank" class="twitch">
+    <img src="imagenes/scrolld/twitch.png" alt="twitch">
+  </a>
+</div>
+
+
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
